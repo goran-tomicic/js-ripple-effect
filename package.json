@@ -1,0 +1,17 @@
+{
+  "name": "js-ripple",
+  "version": "1.0.0",
+  "description": "Material Design Ripple effect for web components",
+  "main": "./lib/ripple.js",
+  "scripts": {
+    "clean": "rimraf lib/*",
+    "compile": "babel ./src/ripple.js -o ./lib/ripple.js",
+    "build": "npm run clean && npm run compile"
+  },
+  "devDependencies": {
+    "@babel/cli": "^7.25.9",
+    "@babel/core": "^7.26.0",
+    "@babel/preset-env": "^7.26.0",
+    "rimraf": "^6.0.1"
+  }
+}
